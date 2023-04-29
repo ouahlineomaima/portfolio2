@@ -9,10 +9,10 @@ import Contact from '../components/Contact'
   return (
     <>
     <Banner/>
-    <Projects/>
+    {/* <Projects/>
     <Skills/>
     <Resume/>
-    <Contact/> 
+    <Contact/>  */}
     </>
     
   )
