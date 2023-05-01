@@ -29,19 +29,23 @@ function NavBar() {
     const onScroll = () => {
       const banner = document.getElementById('banner')
       const projects = document.getElementById('projects')
+      if(window.scrollY > 10){
+        setHidden(false)
+      }
       if (banner == null) {
         setHidden(false)
       }
-      else {
+      else{
         if (window.scrollY > banner.offsetHeight) {
           setHidden(false);
           setActiveLink('projects');
         }
-        if (window.scrollY + 70 < banner.offsetHeight) {
+        if (window.scrollY < banner.offsetHeight) {
           setActiveLink('banner');
           setHidden(true)
         }
       }
+      
 
     }
     window.addEventListener("scroll", onScroll)
@@ -51,7 +55,7 @@ function NavBar() {
   }, [])
 
   return (
-    <div className={hidden ? 'flex justify-between items-center h-16 w-full fixed font-SpaceMono mx-auto px-4 text-white ease-out duration-500 ' : 'flex justify-between items-center h-16 w-full fixed font-SpaceMono  mx-auto  px-4 text-white bg-[#1C0620] ease-in-out duration-500'}>
+    <div className={hidden ? 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono mx-auto px-4 text-white ease-out duration-500 bg-[#1C0620]' : 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono  mx-auto  px-4 text-white bg-[#1C0620] ease-in-out duration-500'}>
       <h1 className='w-full text-2xl font-bold'>omaima ouahline</h1>
       <ul className={hidden
         ? 'flex hidden' : 'hidden md:flex mr-10'}>

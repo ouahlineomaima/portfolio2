@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 body{
-    background-color: #14b114;
+    background-color: transparent;
+    background-image: url('./assets/img/bg-img.png');
     
 }

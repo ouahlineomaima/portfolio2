@@ -6,7 +6,10 @@ module.exports = {
       fontFamily:{
         SpaceGrotesk:['Space Grotesk', 'sans-serif'],
         SpaceMono: ['Space Mono', 'monospace']
-      }
+      },
+      backgroundImage: {
+        'banner-bg': "url('./assets/img/bg-img.png')",
+      },
     },
   },
   plugins: [],
