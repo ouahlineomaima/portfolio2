@@ -17,41 +17,6 @@ function App() {
           <Route path="/subproject/:id1/:id" element={<SubProjectDetails />} /> */}
         </Routes>
         <Footer />
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-        <div className="h-96 bg-white">
-          dfghjkl
-        </div>
-
-
       </div>
     </Router>
   );
