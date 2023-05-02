@@ -2,7 +2,7 @@ import React from 'react'
 
  function Skills() {
   return (
-    <div>Skills</div>
+    <div className='text-white h-screen' id='skills'>Skills</div>
   )
 }
 export default Skills;

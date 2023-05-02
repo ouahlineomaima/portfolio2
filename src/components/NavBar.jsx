@@ -30,34 +30,63 @@ function NavBar() {
     const onScroll = () => {
       const banner = document.getElementById('banner')
       const projects = document.getElementById('projects')
-      if(window.scrollY > 10){
-        setHidden(false)
+      const skills = document.getElementById('skills')
+      const resume = document.getElementById('resume')
+      const contact = document.getElementById('contact')
+  
+      let activeLink;
+      let hidden;
+  
+      switch(true) {
+        case window.scrollY > banner.offsetHeight + banner.offsetTop && window.scrollY < projects.offsetTop + projects.offsetHeight:
+          activeLink = 'projects';
+          hidden = false;
+          console.log('projects', activeLink);
+          break;
+  
+        case window.scrollY > projects.offsetTop + projects.offsetHeight && window.scrollY < skills.offsetTop + skills.offsetHeight:
+          activeLink = 'skills';
+          hidden = false;
+          console.log('skills', activeLink);
+          break;
+  
+        case window.scrollY > skills.offsetTop + skills.offsetHeight && window.scrollY < resume.offsetTop + resume.offsetHeight:
+          activeLink = 'resume';
+          hidden = false;
+          console.log('resume', activeLink);
+          break;
+  
+        case window.scrollY > resume.offsetTop + resume.offsetHeight && window.scrollY < contact.offsetTop + contact.offsetHeight:
+          activeLink = 'contact';
+          hidden = false;
+          console.log('contact', activeLink);
+          break;
+  
+        case window.scrollY < banner.offsetTop + contact.offsetHeight:
+          activeLink = 'banner';
+          hidden = true;
+          console.log('banner', activeLink);
+          break;
+  
+        default:
+          activeLink = '';
+          hidden = false;
+          console.log('footer', activeLink);
       }
-      if (banner == null) {
-        setHidden(false)
-      }
-      else{
-        if (window.scrollY > banner.offsetHeight) {
-          setHidden(false);
-          setActiveLink('projects');
-        }
-        if (window.scrollY < banner.offsetHeight) {
-          setActiveLink('banner');
-          setHidden(true)
-        }
-      }
-      
-
+  
+      setActiveLink(activeLink);
+      setHidden(hidden);
     }
-    window.addEventListener("scroll", onScroll)
-
+  
+    window.addEventListener("scroll", onScroll);
+  
     return () => window.removeEventListener("scroll", onScroll);
-
+  
   }, [])
 
   return (
     <div className={hidden ? 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono mx-auto px-4 text-white ease-out duration-500 bg-[#060508] opacity-90' : 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono  mx-auto  px-4 text-white bg-[#060508] opacity-90 ease-in-out duration-500'}>
-      <h1 className='w-full text-2xl font-bold opacity-100'><Typewriter
+      <h1 className='w-full text-2xl font-bold'><Typewriter
                     words={['OMAIMA OUAHLINE']}
                     loop
                     cursor

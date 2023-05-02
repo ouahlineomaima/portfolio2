@@ -2,7 +2,7 @@ import React from 'react'
 
  function Projects() {
   return (
-    <div>Projects</div>
+    <div className='text-white h-screen ' id='projects'>Projects</div>
   )
 }
 export default Projects;
