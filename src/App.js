@@ -17,7 +17,11 @@ function App() {
           <Route path="/subproject/:id1/:id" element={<SubProjectDetails />} /> */}
         </Routes>
         <Footer />
+        <div className="text-3xl bg-black text-white h-screen">dfgjhjkdljld</div>
+      <div className="text-3xl bg-black text-white h-screen">dfgjhjkdljld</div>
+      <div className="text-3xl bg-black text-white h-screen">dfgjhjkdljld</div>
       </div>
+      
     </Router>
   );
 }
