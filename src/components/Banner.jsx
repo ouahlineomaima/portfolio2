@@ -41,8 +41,6 @@ function Banner() {
 
 
     }, [])
-
-
     return (
         <section className='h-screen bg-cover bg-no-repeat bg-center font-SpaceMono md:flex md:justify-between' id='banner'>
             <div className="text-white px-12 mt-28 font-bold md:w-1/2">

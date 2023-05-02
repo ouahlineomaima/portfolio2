@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom';
 import earth from '../assets/img/Earth.png'
 import rocket from '../assets/img/Rocketship.png'
@@ -56,7 +57,15 @@ function NavBar() {
 
   return (
     <div className={hidden ? 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono mx-auto px-4 text-white ease-out duration-500 bg-[#1C0620]' : 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono  mx-auto  px-4 text-white bg-[#1C0620] ease-in-out duration-500'}>
-      <h1 className='w-full text-2xl font-bold'>omaima ouahline</h1>
+      <h1 className='w-full text-2xl font-bold'><Typewriter
+                    words={['omaima ouahline']}
+                    loop
+                    cursor
+                    cursorStyle='_'
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={3000}
+                /></h1>
       <ul className={hidden
         ? 'flex hidden' : 'hidden md:flex mr-10'}>
         <li className='py-4 px-5'>
