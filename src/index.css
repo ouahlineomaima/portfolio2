@@ -4,7 +4,20 @@
 @tailwind utilities;
 
 body{
-    background-color: transparent;
-    background-image: url('./assets/img/bg-img.png');
+    background-image: linear-gradient(to top, #140608, #13060c, #12070f, #100811, #0d0913, #0b0912, #090912, #080911, #08080f, #08070d, #07060b, #060508);
     
+}
+.animate-bounce {
+    animation: updown 2s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }

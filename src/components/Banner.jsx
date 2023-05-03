@@ -8,6 +8,8 @@ import fallingStar from '../assets/img/Falling star.png'
 import astronaut from '../assets/img/Astronaut.png'
 import satellite from '../assets/img/Satellite 1.png'
 
+
+
 function Banner() {
     const onUpdateActiveLink = (value) => {
         const element = document.getElementById(value)
@@ -16,8 +18,8 @@ function Banner() {
         }
     }
     return (
-        <section className='h-screen bg-cover bg-no-repeat bg-center font-SpaceMono md:flex md:justify-between' id='banner'>
-            <div className="text-white px-12 mt-10 font-bold md:w-1/2">
+        <section className='h-screen bg-cover  font-SpaceMono md:flex md:justify-between' id='banner'>
+            <div className="text-white px-12 mt-10 lg:mt-32 font-bold md:w-1/2 md:h-1/2">
                 <h1 className="text-xl md:text-2xl w-full pb-3">Welcome astronauts!</h1>
                 <h1 className="text-xl md:text-2xl w-full py-3">I am omaima ouahline</h1>
                 <h1 className="text-xl md:text-2xl w-full py-3">I am a <span> <Typewriter
@@ -31,7 +33,7 @@ function Banner() {
                 /></span></h1>
                 <h1 className="text-2xl lg::text-2xl w-full pt-3 flex">Check the north star to start your journey!</h1>
             </div>
-            <div className="mt-28 md:w-1/2 relative" >
+            <div className="mt-28 lg:mt-32 md:w-1/2 md:h-1/2 relative" >
                 <img src={NorthStar} alt="" className="w-[500] h-[268] pr-2" />
                 <ul className='flex text-white w-[500] h-[268] ml-3 absolute top-0 left-0 right-0 bottom-0 opacity-0 transition-opacity duration-300 hover:opacity-100' >
                     <li className='py-4 px-5'>
