@@ -20,8 +20,9 @@ function NavBar() {
   const onUpdateActiveLink = (value) => {
     const element = document.getElementById(value)
     if (element) {
-      window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
       setActiveLink(value);
+      window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
+      
     }
 
   }
@@ -50,7 +51,7 @@ function NavBar() {
           console.log('skills', activeLink);
           break;
   
-        case window.scrollY > skills.offsetTop + skills.offsetHeight && window.scrollY < resume.offsetTop + resume.offsetHeight:
+        case window.scrollY >= skills.offsetTop + skills.offsetHeight && window.scrollY < resume.offsetTop + resume.offsetHeight:
           activeLink = 'resume';
           hidden = false;
           console.log('resume', activeLink);
@@ -115,7 +116,7 @@ function NavBar() {
         <li className='py-4 px-5'>
           <Link to="/resume" className='flex items-center' onClick={() => onUpdateActiveLink('resume')}>
           <img src={astronaut} alt="" className='px-2' />
-          <span className={activeLink === 'resume' ? 'border-b-2' : ''}>Resume</span>
+          <span className={activeLink === 'resume' ? 'border-b-4' : ''}>Resume</span>
         </Link></li>
         <li className='py-4 px-5'>
           <Link to="/contact" className='flex items-center' onClick={() => onUpdateActiveLink('contact')}>
