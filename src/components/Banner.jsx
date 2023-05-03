@@ -19,7 +19,7 @@ function Banner() {
         <section className='h-screen bg-cover bg-no-repeat bg-center font-SpaceMono md:flex md:justify-between' id='banner'>
             <div className="text-white px-12 mt-10 font-bold md:w-1/2">
                 <h1 className="text-xl md:text-2xl w-full pb-3">Welcome astronauts!</h1>
-                <h1 className="text-xl md:text-2xl w-full py-3">I am omaima ouahline/</h1>
+                <h1 className="text-xl md:text-2xl w-full py-3">I am omaima ouahline</h1>
                 <h1 className="text-xl md:text-2xl w-full py-3">I am a <span> <Typewriter
                     words={['Software engineer', 'Full stack developer', 'Mobile app developer', 'UX/UI designer']}
                     loop
