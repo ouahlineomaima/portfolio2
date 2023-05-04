@@ -3,20 +3,74 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-image: linear-gradient(to top, #140608, #13060c, #12070f, #100811, #0d0913, #0b0912, #090912, #080911, #08080f, #08070d, #07060b, #060508);
+body {
+    background-image: linear-gradient(to right bottom, #140608, #13060c, #12070f, #100811, #0d0913, #0b0912, #090912, #080911, #08080f, #08070d, #07060b, #060508);
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stars{
+    position: relative;
+    display: flex;
+}
+
+.stars .star {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.75rem;
+    background-color: #cdcbc45e;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    box-shadow: 0 0 0 0.5rem #cdcbc444, 
+    0 0 6rem #cdcbc4, 
+    0 0 9rem #cdcbc4  ;
+    animation: animate 15s linear infinite ;
+    animation-duration: calc(125s / var(--i));
+}
+.stars .star:nth-child(even){
+    box-shadow: 0 0 0 0.1rem #e3cb7344, 
+    0 0 6rem #e3cb73, 
+    0 0 9rem #e3cb73  ;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0,5);
+    }
+    100%{
+        transform: translateY(-100vh) scale(1);
+    }
     
 }
+
 .animate-bounce {
     animation: updown 2s linear infinite;
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
     }
+
     50% {
         transform: translateY(20px);
     }
+
     100% {
         transform: translateY(-20px);
     }
