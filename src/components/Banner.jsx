@@ -5,8 +5,8 @@ import BannerContent from "./BannerContent";
 function Banner() {
     
     return (
-        <section className='h-screen' id='banner'>
-            <div className="container w-full h-full z-[-1]">
+        <section className='h-screen w-full' id='banner'>
+            <div className="container w-full h-full z-[-20]">
             <div className="stars">
             <span className="star" style={{'--i':11}}></span>
                 <span className="star" style={{'--i':12}}></span>

@@ -16,8 +16,8 @@ export default function BannerContent() {
         }
     }
   return (
-    <section className='h-screen font-SpaceMono md:flex md:justify-between absolute top-0 left-0' id='bannerContent'>
-            <div className="text-white px-12 mt-10 lg:mt-32 font-bold md:w-1/2 md:h-1/2">
+    <section className='h-screen font-SpaceMono md:flex md:justify-between absolute top-0 left-0 w-screen border-b-2' id='bannerContent'>
+            <div className="text-white px-12 mt-32 font-bold md:w-1/2 md:h-1/2">
                 <h1 className="text-xl md:text-2xl w-full pb-3">Welcome astronauts!</h1>
                 <h1 className="text-xl md:text-2xl w-full py-3">I am omaima ouahline</h1>
                 <h1 className="text-xl md:text-2xl w-full py-3">I am a <span> <Typewriter
@@ -32,8 +32,8 @@ export default function BannerContent() {
                 <h1 className="text-2xl lg::text-2xl w-full pt-3 flex">Check the north star to start your journey!</h1>
             </div>
             <div className="mt-28 lg:mt-32 md:w-1/2 md:h-1/2 relative" >
-                <img src={NorthStar} alt="" className="w-[500] h-[268] pr-2 z-10" />
-                <ul className='flex text-white w-[500] h-[268] ml-3 absolute top-0 left-0 right-0 bottom-0 opacity-0 transition-opacity duration-300 hover:opacity-100' >
+                <img src={NorthStar} alt="" className="w-[500] h-[268] pr-2 z-10 sm:w-[250] sm:h-[134]" />
+                <ul className='flex text-white w-[500] h-[268] sm:w-[250] sm:h-[134] ml-3 absolute top-0 left-0 right-0 bottom-0 opacity-0 transition-opacity duration-300 hover:opacity-100' >
                     <li className='py-4 px-5'>
                         <Link to="/home" className='flex items-center absolute -top-8 -left-4' onClick={() => onUpdateActiveLink('banner')}>
                             <img src={earth} alt="" className='px-2' />
