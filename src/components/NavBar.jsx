@@ -86,7 +86,7 @@ function NavBar() {
   }, [])
 
   return (
-    <div className={hidden ? 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono mx-auto px-4 text-white ease-out duration-500 bg-[#060508] opacity-90' : 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono  mx-auto  px-4 text-white bg-[#060508] opacity-90 ease-in-out duration-500'}>
+    <div className={hidden ? 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono mx-auto px-4 text-white ease-out duration-500 bg-[#060508] z-20' : 'flex justify-between items-center h-16 w-full sticky top-0 font-SpaceMono  mx-auto  px-4 text-white bg-[#060508] ease-in-out duration-500 z-20'}>
       <h1 className='w-full text-2xl font-bold'><Typewriter
                     words={['OMAIMA OUAHLINE']}
                     loop
