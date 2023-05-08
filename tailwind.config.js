@@ -15,7 +15,9 @@ module.exports = {
         'dark-galaxy': "linear-gradient(to bottom, #05022F, #100E3C, #23214B, #3D3262, #5B487B)"
       },
       screens:{
-        'l': '816px'
+        'l': '816px',
+        'sm': '100px'
+
         
       }
     },
