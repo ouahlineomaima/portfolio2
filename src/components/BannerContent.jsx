@@ -16,7 +16,7 @@ export default function BannerContent() {
         }
     }
   return (
-    <section className='h-screen font-SpaceMono md:flex md:justify-between absolute top-0 left-0 w-screen border-b-2' id='bannerContent'>
+    <section className='h-screen font-SpaceMono md:flex md:justify-between absolute top-0 left-0 w-screen border-b-2 lg:pt-5' id='bannerContent'>
             <div className="text-white px-12 mt-32 font-bold md:w-1/2 md:h-1/2">
                 <h1 className="text-sm l:text-2xl w-full pb-3">Welcome astronauts!</h1>
                 <h1 className="text-sm l:text-2xl w-full py-3">I am omaima ouahline</h1>

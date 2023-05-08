@@ -13,7 +13,7 @@ function Projects() {
         <img src={rocket} alt="" />
       </div>
       <div className='md:flex md:flex-grow mt-10 items-center sm:justify-center '>
-        <img src={settingAstronaut} alt="" className='ml-12 sm:ml-[28%] md:h-[25vh] sm:max-h-[20vh] sm:mt-3 sm:mb-2 px-4 animate-bounce h-1/2 -z-10' />
+        <img src={settingAstronaut} alt="" className='ml-12 sm:w-auto w-[200px] sm:ml-[28%] md:h-[25vh] sm:max-h-[20vh] sm:mt-3 sm:mb-2 px-4 animate-bounce h-1/2 -z-10' />
         <div className='px-8 flex flex-wrap md:max-h-[75vh] '>
           {resolvedProjects.map((project, index) => {
             return (

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-    background-image: linear-gradient(to right bottom, #140608, #13060c, #12070f, #100811, #0d0913, #0b0912, #090912, #080911, #08080f, #08070d, #07060b, #060508);
+    background-image: linear-gradient(to right bottom, #341e39, #2b1d33, #241b2c, #1d1925, #18161d, #18171e, #191720, #191821, #1e1c2d, #241f38, #2b2244, #33254f);
 
 }
 .container{
@@ -38,7 +38,7 @@ body {
     box-shadow: 0 0 0 0.5rem #cdcbc444, 
     0 0 6rem #cdcbc4, 
     0 0 9rem #cdcbc4  ;
-    animation: animate 15s linear infinite ;
+    animation: animate 2s linear infinite ;
     animation-duration: calc(125s / var(--i));
 }
 .stars .star:nth-child(even){

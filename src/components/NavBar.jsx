@@ -97,7 +97,7 @@ function NavBar() {
                     delaySpeed={3000}
                 /></h1>
       <ul className={hidden
-        ? 'flex hidden' : 'hidden md:flex mr-10'}>
+        ? 'flex hidden uppercase' : 'hidden md:flex mr-10 uppercase'}>
         <li className='py-4 px-5'>
           <Link to="/home" className='flex items-center' onClick={() => onUpdateActiveLink('banner')}>
             <img src={earth} alt="" className='px-2' />
