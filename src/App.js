@@ -4,6 +4,8 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from './pages/Home';
 
+// test
+
 function App() {
   return (
     <Router>
