@@ -31,7 +31,14 @@ export default function BannerContent() {
                 /></span></h1>
                 <h1 className="text-sm lg:text-2xl w-full pt-3 flex">Check the north star to start your journey!</h1>
             </div>
-            <div className="mt-28 lg:mt-32 md:w-1/2 md:h-1/2 relative sm:ml-4" >
+            <div className='container2'>
+                <div className='loader'><span></span></div>
+                <div className='loader'><span></span></div>
+                <div className='loader'><i></i></div>
+                <div className='loader'><i></i></div>
+            </div>
+
+            {/* <div className="mt-28 lg:mt-32 md:w-1/2 md:h-1/2 relative sm:ml-4" >
                 <img src={NorthStar} alt="" className="w-[500px] h-[268px] pr-2 z-10 sm:w-[250px] sm:h-[134px]" />
                 <ul className='flex text-white w-[500] h-[268] sm:w-[250px] sm:h-[134px] ml-3 absolute top-0 left-0 right-0 bottom-0 opacity-0 transition-opacity duration-300 hover:opacity-100' >
                     <li className='py-4 px-5'>
@@ -61,7 +68,7 @@ export default function BannerContent() {
                         </Link></li>
                 </ul>
                 
-            </div>
+            </div> */}
         </section>
   )
 }
